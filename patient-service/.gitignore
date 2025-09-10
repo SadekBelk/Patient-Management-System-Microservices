@@ -1,0 +1,39 @@
+# Build artifacts
+target/
+!**/src/main/resources/static/
+!**/src/main/resources/public/
+*.jar
+*.war
+*.zip
+*.tar.gz
+
+# Maven specific
+.mvn/wrapper/maven-wrapper.jar
+pom.xml.tag
+pom.xml.bak
+pom.xml.versionsBackup
+pom.xml.releaseBackup
+
+# Gradle specific (if using Gradle)
+.gradle/
+build/
+
+# IDE specific files
+.idea/
+.classpath
+.project
+.settings/
+*.iml
+*.ipr
+*.iws
+.DS_Store # macOS specific
+Thumbs.db # Windows specific
+
+# Log files
+*.log
+logs/
+
+# Environment variables and sensitive files
+.env
+application*.properties.bak
+application*.yml.bak
