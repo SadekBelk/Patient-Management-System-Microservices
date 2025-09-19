@@ -10,3 +10,18 @@ This project is a **microservices-based healthcare system** designed to demonstr
 # Billing Service
 # Auth Service
 # Analytics Service
+# Detailed instructions on how to set up and install the project locally
+
+The first step is to create a Docker container using the official Postgres image from Docker Hub (**link:** [postgres image](https://hub.docker.com/_/postgres)). When running the container, we need to define a set of environment variables that configure the database (such as username, password, and database name). Next, we should expose the container’s ports by binding them to ports on the host machine, allowing access from our IDE or other applications. After that, we’ll set up bind mounts so that the container can store a copy of its data on our local development machine, ensuring persistence across container restarts. Finally, we’ll connect this container to a Docker network so that it can communicate with other containers running on the same network.
+
+**Setup steps:**
+
+1. Pull the container image from Docker Hub.
+
+2. Define the required environment variables.
+
+3. Bind the container’s ports to the host machine.
+
+4. Configure bind mounts for persistent storage.
+
+5. Add the container to a Docker network for inter-container communication.
