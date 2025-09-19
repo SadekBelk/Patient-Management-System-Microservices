@@ -25,3 +25,11 @@ The first step is to create a Docker container using the official Postgres image
 4. Configure bind mounts for persistent storage.
 
 5. Add the container to a Docker network for inter-container communication.
+
+### Environment Variables
+
+```
+POSTGRES_DB=db;
+POSTGRES_PASSWORD=password;
+POSTGRES_USER=admin_user
+```
